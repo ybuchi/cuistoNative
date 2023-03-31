@@ -6,8 +6,14 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "expo": {
+      "scheme": "cuisto",
+      "web": {
+        "bundler": "metro"
+      }
+    },
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/CUISTO-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
