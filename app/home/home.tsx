@@ -12,7 +12,8 @@ export default function HomeScreen(){
     return(
         <View style={styles.padded}>
             <View>
-                <Text style={styles.title}>Welcome to Cuisto</Text>
+                <Text style={styles.title}>Welcome to</Text>
+                <Image style={styles.tinyLogo} source={require("/Users/Yannik/Cuisto/assets/4.png")}/>
                 <Text style={styles.subtitle}>The app for home chefs.</Text>
             </View>
             <View style={styles.padded}>
@@ -20,12 +21,7 @@ export default function HomeScreen(){
                     <TextInput style={styles.input} placeholder="Username"/>
                     <TextInput style={styles.input} placeholder="Password"/>
                 </SafeAreaView>
-                
             </View>
-            <View>
-                <Image style={styles.tinyLogo} source={require("/Users/Yannik/Cuisto/assets/CUISTO-splash.png")}/>
-            </View>
-           
         </View>
         
     )
@@ -42,8 +38,8 @@ const styles = StyleSheet.create({
         textAlign: "center" 
     },
     tinyLogo: {
-        width: 400,
-        height: 400
+        height: 100,
+        resizeMode: "contain"
     },
     padded: {
         padding: 20
