@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SplashScreen } from "expo-router";
 import HomeScreen from "./home/home";
-import DetailsScreen from "./details/details";
+import DashboardScreen from "./dashboard/dashboard";
 
 export default function App() {
   const [isReady, setReady] = useState(false);
@@ -24,7 +24,7 @@ export default function App() {
     <NavigationContainer independent>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Dashboard" component={DashboardScreen} />
       </Stack.Navigator>
     </NavigationContainer>
 
